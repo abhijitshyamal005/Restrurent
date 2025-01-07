@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import { ErrorHandler } from "./middlewares/error.js";
+import { errorMiddleware } from "./middlewares/error.js";
 import reservationRouter from "./routes/reservationRoute.js";
 import { connectDB } from "./config/db.js";
 
@@ -26,7 +26,7 @@ app.get("/", (req, res, next)=>{return res.status(200).json({
 
 connectDB();
 
-app.use(ErrorHandler);
+app.use(errorMiddleware);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

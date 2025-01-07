@@ -2,34 +2,37 @@ import mongoose from "mongoose";
 import validator from "validator";
 
 const reservationSchema = new mongoose.Schema({
-  firstname: {
+  firstName: {
     type: String,
     required: true,
-    minLength: [3, "First name must contain 3 charecter"],
+    minLength: [3, "First name must be of at least 3 Characters."],
+    maxLength: [30, "First name cannot exceed 30 Characters."],
   },
-  lastname: {
+  lastName: {
     type: String,
     required: true,
-    minLength: [3, "Last name must contain 3 charecter"],
+    minLength: [3, "Last name must be of at least 3 Characters."],
+    maxLength: [30, "Last name cannot exceed 30 Characters."],
+  },
+  date: {
+    type: String,
+    required: true,
+  },
+  time: {
+    type: String,
+    required: true,
   },
   email: {
     type: String,
     required: true,
-    unique: true,
-    validate: [validator.isEmail, "Provide a valid Email"],
+    validate: [validator.isEmail, "Provide a valid email"],
   },
   phone: {
     type: String,
     required: true,
-    validate: [validator.isMobilePhone, "Provide a valid phone number"],
-    minLength: [10, "Phone number must b1 11 digits"],
-    maxLength: [10, "Phone number must b1 11 digits"],
+    minLength: [10, "Phone number must contain 10 Digits."],
+    maxLength: [10, "Phone number must contain 10 Digits."],
   },
-  date: { type: Date, required: true },
-  time: { type: String, required: true },
-
 });
 
 export const Reservation = mongoose.model("Reservation", reservationSchema);
-
-
