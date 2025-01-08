@@ -2,7 +2,6 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
 
 const Reservation = () => {
   const [firstName, setFirstName] = useState("");
@@ -11,7 +10,6 @@ const Reservation = () => {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [phone, setPhone] = useState(0);
-  const navigate = useNavigate();
 
   const handleReservation = async (e) => {
     e.preventDefault();
@@ -33,7 +31,7 @@ const Reservation = () => {
       setEmail("");
       setTime("");
       setDate("");
-      navigate("/success");
+     
     } catch (error) {
       toast.error(error.response.data.message);
     }
