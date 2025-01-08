@@ -1,7 +1,7 @@
 
 const Notfound = () => {
   return (
-    <div>Notfound</div>
+    <div> Not Found ! Please refress the page Or go back to the home</div>
   )
 }
 
