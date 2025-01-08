@@ -10,7 +10,7 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: ["https://okolkata-house.onrender.com"],
     methods: ["POST"],
     credentials: true,
   })
