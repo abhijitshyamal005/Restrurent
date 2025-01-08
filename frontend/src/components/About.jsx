@@ -12,13 +12,16 @@ const About = () => {
               <p>The only thing we&apos;re serious about is food.</p>
             </div>
             <p className="mid">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Provident possimus optio adipisci dolores impedit illum iusto
-              perferendis, laudantium quod accusamus consequuntur consectetur,
-              tempore nulla error iure reiciendis dolorem assumenda.
-              Necessitatibus fugit asperiores totam rem esse exercitationem
-              iusto ipsum qui dolore ex, accusantium repellat mollitia
-              repellendus.
+              Welcome to 0&apos;Kolkata House, a student-friendly restaurant located
+              in Egra, Purbamedinipur, West Bengal (721422). At 0&apos;Kolkata House,
+              we serve a blend of delicious, homestyle meals with a vibrant
+              atmosphere that&apos;s perfect for students and young minds looking for
+              a comfortable spot to unwind and enjoy good food. We pride
+              ourselves on quality, affordability, and creating a community
+              where everyone feels welcome. So come visit us at 0&apos;Kolkata House,
+              and let us make your dining moments delightful and memorable. Your
+              satisfaction is our priority—because at 0&apos;Kolkata House, it&apos;s not
+              just about food; it’s about creating a connection.
             </p>
             <Link to={"/"}>
               Explore Menu{" "}

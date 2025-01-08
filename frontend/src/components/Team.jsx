@@ -6,9 +6,9 @@ const Team = () => {
         <div className="heading_section">
           <h1 className="heading">OUR TEAM</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            fugit dicta, ipsum impedit quam laboriosam quas doloremque quia
-            perferendis laborum.
+            Get to Know the Faces Behind 0&apos;Kolkata House: A Passionate and
+            Dedicated Team Committed to Bringing You Exceptional Flavors,
+            Unforgettable Experiences, and a Warm Welcome Every Time You Visit!{" "}
           </p>
         </div>
         <div className="team_container">
